@@ -24,11 +24,7 @@ const NavBar = ({ valueOfInput = "" }: NavBarProps): React.ReactElement => {
         return navigate(valueOfRoute);
 
     }
-    const onSuggestion = (hasEnabled:boolean,e:React.ChangeEvent<HTMLInputElement>)=>{
 
-        setHasSuggestion(hasEnabled)
-        setSearch(e.target.value)
-    }   
     return (
         <nav className="navBar">
             <TagFlex className="navBarElements" as="div" align="center" justifyContent="center">
