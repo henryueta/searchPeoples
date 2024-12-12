@@ -1,0 +1,46 @@
+
+.peopleCard{
+    --cardWidth:250px;
+    --cardHeight:350px;
+    --cardImageSize:150px;
+    --cardH1Size:22px;
+    --cardPSize:15px;
+    cursor: pointer;
+    border:2px solid var(--borderColor);
+    border-radius:10px;
+    width:var(--cardWidth);
+    height:var(--cardHeight);
+    background-color: white;
+    text-align: center;
+}
+
+.peopleCard>img{
+    height: var(--cardImageSize);
+    width: var(--cardImageSize);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.peopleCard>h1{
+    font-size: var(--cardH1Size);
+}
+
+.peopleCard>p{
+    font-size: var(--cardPSize);
+}
+
+.peopleCard:hover{
+    transform: scale(1.1);
+    background-color: rgb(178, 178, 243);
+}
+
+@media screen and (max-width:1024px){
+    .peopleCard{
+    --cardWidth:150px;
+    --cardHeight:250px;
+    --cardImageSize:70px;
+    --cardH1Size:13px;
+    --cardPSize:8px;
+    }
+
+}

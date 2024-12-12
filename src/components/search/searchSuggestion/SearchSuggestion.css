@@ -1,0 +1,44 @@
+.suggestionList {
+    --suggestionListWidth: 450px;
+    --suggestionListLeft: 105px;
+    --suggestionItemPadding: 15px;
+    --suggestionItemFontSize: 17px;
+    position: absolute;
+    left: var(--suggestionListLeft);
+    right: 0px;
+    z-index: 2;
+    background-color: white;
+    width: var(--suggestionListWidth);
+    margin: 0 auto;
+    align-self: center;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+}
+
+.suggestionList>ul {
+    width: 100%;
+    list-style: none;
+    color: black;
+}
+
+.suggestionList li {
+    padding: var(--suggestionItemPadding);
+    font-size: var(--suggestionItemFontSize);
+    border-bottom: 2px solid var(--borderColor);
+    cursor: pointer;
+}
+
+.suggestionList li:hover {
+    background-color: var(--borderColor);
+}
+
+@media screen and (max-width:1024px) {
+
+    .suggestionList {
+        --suggestionListWidth: 200px;
+        --suggestionListLeft: 76px;
+        --suggestionItemPadding: 6px;
+        --suggestionItemFontSize: 11px;
+    }
+
+}

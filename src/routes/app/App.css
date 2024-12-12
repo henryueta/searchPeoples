@@ -1,0 +1,19 @@
+.peopleList{
+    width: 95%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+    padding: 60px 0px;
+    gap: 20px;
+}
+
+@media screen and (max-width:1024px){
+
+.peopleList{
+    grid-template-columns: repeat(2,1fr);
+}
+
+}
+
